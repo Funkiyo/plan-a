@@ -4,7 +4,6 @@ namespace App\Console\Commands;
 
 use App\Exceptions\GeneratorException;
 use App\Generator\Template;
-use App\Generator\ModelTemplateConfig;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 
@@ -22,7 +21,7 @@ class GenerateFiles extends Command
      *
      * @var string
      */
-    protected $description = 'Generates models from config/modles-generator and ';
+    protected $description = 'Generates files from config/generator and resources/templates';
 
     /**
      * Create a new command instance.
