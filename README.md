@@ -25,5 +25,5 @@ Tests are located in ```tests/Unit```.
 
 It is not 100% coverage, but it covers the general operation of the classes located in ```App/Generator```
 
-To run the tests use ```vendor/bin/phpuni``` or ```php artisan test```
+To run the tests use ```vendor/bin/phpunit``` or ```php artisan test```
 
