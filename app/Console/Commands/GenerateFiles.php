@@ -41,7 +41,7 @@ class GenerateFiles extends Command
     public function handle()
     {
         $type = $this->argument( 'type' );
-        $rawConfigs = config( 'generator.' . $type );
+        $rawConfigs = config( 'generator.' . $type , []);
         foreach ( $rawConfigs as $c ) {
             $templateConfigClass = $this->getTemplateConfigClassName( $type );
             $templateConfig = new $templateConfigClass( $type, $c[ 'name' ], $c[ 'scope' ], $c[ 'template' ] ?? null );
