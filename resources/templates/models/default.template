@@ -1,0 +1,11 @@
+<?php
+namespace {namespace};
+use Illuminate\Database\Eloquent\Model;
+class {className} extends Model
+{
+    const TABLE_NAME = '{tableName}';
+    public function getTableName(): string
+    {
+        return self::TABLE_NAME;
+    }
+}
